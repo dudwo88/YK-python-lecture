@@ -80,7 +80,7 @@ if isinstance(one, int): #=> This is more recommended.
 # %f: Floating-point specifier
 ###########################################################
 print("one: %d, two: %d, three: %d, three-1: %f, hello = %s" % (one, two, three, three, hello))
-print(f"one: {one}, two: {two}, three: {int(three)}, three-1: {three:.6f}, hello = {hello}")
+print(f"one: {one}, two: {two}, three: {int(three)}, three-1: {three:.6f}, hello = {hello}") ## this is new style, more recommended.
 
 mystring = 'hello'
 myfloat = float(10)

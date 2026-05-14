@@ -20,3 +20,96 @@ print(fruitList[2]) # prints 3
 print('========= loop ======')
 for x in fruitList:
     print(x)
+
+
+###########################################
+# list slicing
+###########################################
+print()
+print('#################### list slicing ################')
+
+slicinglist = [0, 1, 2, 3, 4, 5]
+print(slicinglist[1:4])
+print(slicinglist[:3])
+print(slicinglist[2:])
+print(slicinglist[2:-1])
+print(slicinglist[2:-2])
+print(slicinglist[:])
+print(slicinglist)
+print(slicinglist[::2])
+
+# minus index.
+print(slicinglist[-3:])
+print(slicinglist[::-1]) ## reverse, oiginal list won't be changed
+
+
+################################################
+# copy list
+###############################################
+print()
+print('#################### copy list ################')
+newlist = slicinglist[:] ## Shallow Copy
+anotherlist = slicinglist ## Reference assignment (memory address) - little bit explain
+print(newlist)
+print(anotherlist)
+
+slicinglist.append(7)
+print(newlist)  
+print(anotherlist)
+
+
+########################################################
+# list operator=>append(), sort(), len() 
+########################################################
+print()
+print('#################### list operator=>append(), sort(), len() ################')
+operationList = [1, 0, 2, 4, 3, 5]
+operationList.append(6)
+print(operationList)
+
+operationList.sort() #assending
+print(operationList)
+
+operationList.sort(reverse=True) #decending
+print(operationList)
+
+print(len(operationList))
+
+reverseList = ['x1', 'x2', 'x4', 'x3'] #Revverse list value
+reverseList.reverse()
+print(reverseList)
+
+
+##############################################################
+# remove(), pop(), del()
+##############################################################
+print()
+print('#################### list operator=> remove(), pop(), del() ################')
+operationList = [1, 0, 2, 4, 3, 5]
+operationList.remove(3) # This is good when you know only value, but not sure the index.
+print(operationList)
+
+operationList = [1, 0, 2, 4, 3, 5]
+operationList.pop(3) # This is good when you know the index when you want to delete.
+print(operationList)
+
+operationList = [1, 0, 2, 4, 3, 5]
+del operationList[0:4] # This is good if you want to delete from one index to another (range)
+print(operationList)
+
+
+##############################################################
+# list in
+##############################################################
+operationList = [1, 0, 2, 4, 3, 5] ## validate if the certain value does exist. 
+print(3 in operationList)
+print(6 in operationList)
+print(6 not in operationList)
+
+### all casesenstive.
+users = ["Alice", "Bob", "Charlie"]
+if "Alice" in users:
+    print("Alice is a user")
+
+if "alice" in users:
+    print("Alice is a user")
