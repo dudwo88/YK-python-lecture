@@ -1,3 +1,13 @@
+"""
+Author: Youngjae Kim
+Date: 2026-05-08
+Description: 
+    •	Understand the four basic types: int, float, str, bool
+    •	Grasp variable assignment without type declarations — key difference from Java
+    •	Use type() to inspect any variable
+    •	Use input() to receive text from the user
+"""
+
 # Numbers - int
 print("============ Numbers - int =============")
 myint = 7

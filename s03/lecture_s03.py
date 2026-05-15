@@ -1,3 +1,12 @@
+"""
+Author: Youngjae Kim
+Date: 2026-05-14
+Description: 
+    •	Create, access, modify, and delete list items
+    •	Extract sublists using slicing
+    •	Use the most common list methods confidently
+"""
+
 ## Array style
 print('############### example 1 #################')
 fruits = ['apple', 'banana', 'cherry']
